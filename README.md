@@ -9,7 +9,7 @@ Assuming you have the following mounts:
 Simply add the following to your HTTP configuration in NGINX:
 ```
 location /.well-known/ {
-    alias /mnt/letsencrypt/.well-known/;
+    root /mnt/letsencrypt;
 }
 ```
 To use the certificates, add the following to your HTTPS configuration:
