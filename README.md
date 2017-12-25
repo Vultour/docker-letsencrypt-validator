@@ -25,7 +25,7 @@ You will need:
 * Two volumes
   * A webroot volume that your webserver will serve
   * A certificate volume where LE files will be stored
-* A `variables.sh` file
+* A `variables.sh` file ([click here to see the example file](https://gitlab.com/vultour/docker-letsencrypt-validator/blob/master/variables.sh))
 
 #### Using `docker run`:
 `docker run -it --rm --network your_network --volume webroot:/mnt/letsencrypt --volume certs:/etc/letsencrypt --volume ./variables.sh:/srv/variables.sh:ro vultour/docker-letsencrypt-validator`
